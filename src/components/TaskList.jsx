@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
-import TaskCard from "./TaskCard";
+import { useContext } from "react";
+import { TaskContext } from "../context/TaskContext";
+import TaskCard from "../components/TaskCard";
 
-function TaskList({ tasks }) {
+function TaskList() {
+  const { tasks } = useContext(TaskContext);
+
   if (tasks.length === 0) {
-    return <h1>No hay</h1>;
+    return <h1>I don't have tasks</h1>;
   }
 
   return (
