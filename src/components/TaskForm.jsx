@@ -16,7 +16,7 @@ const TaskForm = () => {
 
   return (
     <form
-      className="flex flex-col items-center gap-3 w-4/12 bg-white py-6 rounded-md outline outline-1 outline-slate-300 shadow-slate-400 shadow"
+      className="flex flex-col items-center gap-3 sm:w-11/12 md:w-10/12 lg:w-4/12 bg-white py-6 rounded-md outline outline-1 outline-slate-300 shadow-slate-400 shadow"
       onSubmit={handleSubmit}
     >
       <h2 className="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
